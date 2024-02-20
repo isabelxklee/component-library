@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { styled } from 'styled-components';
 
 interface InputProps {
-  input: string;
+  input?: string;
   label: string;
   placeholder: string;
 }
