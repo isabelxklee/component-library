@@ -8,19 +8,27 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-// const StyledSelect = styled.select`
-//   font-family: 'Inter', sans-serif;
-//   font-weight: 500;
-//   font-size: 24px;
-//   padding: 24px;
-//   width: fit-content;
-// `;
+const StyledInput = styled.input`
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 24px;
+  width: fit-content;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+
+  &:focus {
+    outline: none;
+    border: 2px solid #000;
+  }
+`;
 
 export const Input = (): ReactElement => {
   return (
     <Wrapper>
       <label>Type something:</label>
-      <input placeholder="Enter if you dare..." />
+      <StyledInput placeholder="Enter if you dare..." />
     </Wrapper>
   );
 };
