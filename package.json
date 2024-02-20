@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
-  "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "name": "component-library",
+  "version": "0.0.1",
+  "description": "Component library",
   "type": "module",
   "engines": {
     "node": ">=18.12.0"
@@ -51,7 +51,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Isabel K. Lee <hi@kleetime.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "@types/react": "*",
