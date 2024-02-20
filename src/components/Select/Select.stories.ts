@@ -13,16 +13,12 @@ type Story = StoryObj<typeof Select>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
     label: 'Select option',
-    background: 'red',
   },
 };
 
 export const Warning: Story = {
   args: {
-    primary: true,
     label: 'Delete now',
-    backgroundColor: 'red',
   },
 };
