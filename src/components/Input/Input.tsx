@@ -1,6 +1,12 @@
 import React, { ReactElement } from 'react';
 import { styled } from 'styled-components';
 
+interface InputProps {
+  input: string;
+  label: string;
+  placeholder: string;
+}
+
 const Wrapper = styled.div`
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -35,11 +41,15 @@ const StyledInput = styled.input`
   }
 `;
 
-export const Input = (): ReactElement => {
+export const Input = ({
+  input,
+  label,
+  placeholder,
+}: InputProps): ReactElement => {
   return (
     <Wrapper>
-      <Label>Type something:</Label>
-      <StyledInput placeholder="Enter if you dare..." />
+      <Label>{label}</Label>
+      <StyledInput placeholder={placeholder} value={input} />
     </Wrapper>
   );
 };

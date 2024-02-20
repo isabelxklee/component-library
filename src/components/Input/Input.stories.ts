@@ -13,9 +13,8 @@ type Story = StoryObj<typeof Input>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Select option',
-    background: 'red',
+    label: 'Input label',
+    placeholder: 'Enter if you dare...',
   },
 };
 
